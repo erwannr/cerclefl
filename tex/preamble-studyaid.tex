@@ -17,12 +17,12 @@
   \DTLforeach{studyaid-#1}{%
     \sid=id,%
     \squestion=question,%
-    \squoteid=quote-id,%
+    \sexhibit=exhibit,%
     \sanswer=answer%
   }{%
     \begin{q-#1}
-      \DTLifnull{\squoteid}{}{%
-        \CorpusQuoteTypeset{\squoteid}
+      \DTLifnull{\sexhibit}{}{%
+        \sexhibit
       }%
       \squestion
     \end{q-#1}
