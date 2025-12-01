@@ -15,7 +15,7 @@
     \DTLforeach[\DTLiseq{\id}{#2}]{corpus-publication}{\id=id,\name=name}{%
       \IfBooleanTF{#1}
       {\name}%
-      {\hyperref[corpus:publ:\id]{\name}}%
+      {\hyperref[corpus-publ:\id]{\name}}%
     }
   }
 
@@ -23,7 +23,7 @@
   \DTLforeach[\DTLiseq{\id}{#2}]{corpus-author}{\id=id,\name=name}{%
     \IfBooleanTF{#1}
     {\name}%
-    {\hyperref[corpus:author:\id]{\name}}%
+    {\hyperref[corpus-author-\id]{\name}}%
   }
 }
 
@@ -32,7 +32,7 @@
     \IfBooleanTF{#1}
     {\name}%
     {\name
-      % \hyperref[corpus:keyword:\id]{\name} % disabled until section is created
+      % \hyperref[corpus-keyword-\id]{\name} % disabled until section is created
     }%
   }
 }

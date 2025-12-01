@@ -16,20 +16,20 @@
 % \input{../tex/club-journal.tex}
 
 \part{Cahier de compagnonnage}
-\label{part:club}
+\label{part-club}
 
 \chapter{Journal}
-\label{club:journal}
+\label{club-journal}
 \ClubJournalTypeset{2025-04-04}
 \ClubJournalTypeset{2025-07-29}
 \ClubJournalTypeset{2025-10-30}
 \ClubJournalTypeset{2025-11-12}
 
 \chapter{Membre}
-\label{club:member}
+\label{club-member}
 \DTLsort{id}{club-member}
 \DTLforeach{club-member}{\id=id,\mname=name,\murl=url,\joined=joined}{%
-  \section{\mname}\label{club:member:\id}
+  \section{\mname}\label{club-member-\id}
   \noindent\textbf{URL:} \url{\murl}\\
   \noindent\textbf{Depuis:} \DTMdate{\joined}\\
   \par%\bigskip

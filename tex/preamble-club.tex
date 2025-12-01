@@ -11,7 +11,7 @@
     \readid=read-id,
     \summary=summary
   }{%
-    \section{\name}\label{corpus:publ:\publid}
+    \section{\name}\label{corpus-publ:\publid}
     % \begin{publentry}
     \begin{description}
     \item[Auteur]~\CorpusAuthorName*{\authorid}
@@ -31,7 +31,7 @@
   \DTLforeach[\DTLiseq{\id}{#2}]{club-member}{\id=id,\name=name}{%
     \IfBooleanTF{#1}
     {\name}%
-    {\hyperref[club:member:\id]{\name}}%
+    {\hyperref[club-member-\id]{\name}}%
   }
 }
 
@@ -39,7 +39,7 @@
   \DTLforeach[\DTLiseq{\id}{#2}]{club-read}{\id=id,\name=name}{%
     \IfBooleanTF{#1}
     {\name}%
-    {\hyperref[club:read:\id]{\name}}%
+    {\hyperref[club-read-\id]{\name}}%
   }
 }
 
@@ -53,7 +53,7 @@
     \thisurl=url,
     \details=details
   }{%
-    \section{\texorpdfstring{\DTMdate{\date}\ :~\title}{\date\ : \bookmark}}\label{club:journal:\date}
+    \section{\texorpdfstring{\DTMdate{\date}\ :~\title}{\date\ : \bookmark}}\label{club-journal:\date}
     \noindent\textbf{Web:}~\url{\thisurl}\\
     \noindent\textbf{Participants:}~\__erw_format_list:eN{\partiesid}\ClubMemberName\\
     \noindent\textbf{Détail:}~\details
