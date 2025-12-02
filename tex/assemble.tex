@@ -41,6 +41,24 @@
 \usepackage{hyperref} % first
 \usepackage[french]{cleveref} % second
 
+\input{../tex/setup-rest.tex}
+\input{../tex/setup-listings.tex}
+\input{../tex/setup-title.tex}
+\input{../tex/setup-tcolorbox.tex}
+
+\input{../tex/setup-color.tex}
+
+\input{../tex/setup-geometry.tex}
+\savegeometry{default}
+
+\input{../tex/setup-hyperref.tex}
+
+\tcbuselibrary{most}
+
+% \geometry{showframe} % temporary
+\addbibresource{../bib/french.bib}
+\addbibresource{../bib/howtocite.bib}
+
 \input{../tex/shared-counter.tex} % local
 % \input{../tex/shared-enotez.tex} % local
 % \input{../tex/shared-french.tex} % local
@@ -48,41 +66,24 @@
 \input{../tex/shared-provide.tex}
 \input{../tex/shared-quotestyle.tex}
 
-\input{../tex/preamble-color.tex}
-
-\input{../tex/preamble-geometry.tex}
-\savegeometry{default}
-
+\input{../tex/preamble-french.tex}
 \input{../tex/preamble-abstract.tex}
 \input{../tex/preamble-back.tex}
 \input{../tex/preamble-club.tex}
 \input{../tex/preamble-corpus.tex}
-\input{../tex/preamble-enotez.tex}
-\input{../tex/preamble-french.tex}
+\input{../tex/preamble-marker.tex}
+\input{../tex/preamble-markers.tex}
 
-\input{../tex/preamble-headfoot.tex}
 \input{../tex/preamble-info.tex}
 \input{../tex/preamble-latex3.tex}
-\input{../tex/preamble-listings.tex}
-\input{../tex/preamble-numbering.tex}
+\input{../tex/preamble-crossref.tex}
 \input{../tex/preamble-studyaid.tex}
-\input{../tex/preamble-title.tex}
 \input{../tex/preamble-text.tex}
-\input{../tex/preamble-xsim.tex}
+\input{../tex/template-xsim.tex}
 
 \input{../tex/preamble-cover.tex}
 
-% \geometry{showframe} % temporary
-\hypersetup{
-  colorlinks=false,
-  linkbordercolor=rust,
-  urlbordercolor=rust,
-  citebordercolor=rust
-}
-\tcbuselibrary{most}
-\addbibresource{../bib/french.bib}
-\addbibresource{../bib/howtocite.bib}
-\pagestyle{rest}
+\input{../tex/template-enotez.tex}
 
 \input{../tex/corpus-author.tex}
 \input{../tex/corpus-keyword.tex}

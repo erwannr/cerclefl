@@ -14,12 +14,13 @@
 {\QuestionAnswerNew{#1}}
 
 \ProvideDocumentCommand{\StudyAidTypeset}{m}{%
+  \StudyAidRatio{#1}
   \DTLforeach{studyaid-#1}{%
     \sid=id,%
     \squestion=question,%
     \sexhibit=exhibit,%
     \sanswer=answer%
-  }{%
+  }{%      
     \begin{q-#1}
       \DTLifnull{\sexhibit}{}{%
         \sexhibit
@@ -30,5 +31,26 @@
     \begin{a-#1}
       \sanswer
     \end{a-#1}
+  }%
+}
+
+\ProvideDocumentCommand{\StudyAidRatio}{m}{%
+  \reversemarginpar\marginpar{%
+    \IfPackageLoadedTF{tcolorbox}
+    {%
+      \begin{tcolorbox}[width=\marginparwidth, fontupper=\small]
+        \IfPackageLoadedTF{fontawesome5}{\faChartBar{} }{}%
+        \begin{tabular}{ll}
+          Publiées & \CounterUse{#1-safe}\\
+          Total & \CounterUse{#1-unsafe}%
+        \end{tabular}
+      \end{tcolorbox}
+    }{%
+      \small
+      \begin{tabular}{ll}
+        Publiées & \CounterUse{#1-safe}\\
+        Total & \CounterUse{#1-unsafe}%
+      \end{tabular}
+    }%
   }%
 }

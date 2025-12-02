@@ -37,21 +37,17 @@
   }
 }
 
-\ProvideDocumentCommand{\CorpusQuoteTypeset}{m}
+\ProvideDocumentCommand{\CorpusQuoteTypeset}{sm}
 {%
-  \DTLforeach[\DTLiseq{\qid}{#1}]{corpus-quote}{%
+  \DTLforeach[\DTLiseq{\qid}{#2}]{corpus-quote}{%
     \qid=id,
     \qtext=text,
     \qauthorid=authorid,
     \qsource=source
   }{%
     \begin{tcolorbox}[quotestyle]
-      \qtext
-      \DTLifnull{\qsource}{%
-        \AttributeQuote{\CorpusAuthorName*{\qauthorid}}%
-      }{%
-        \AttributeQuote{\CorpusAuthorName*{\qauthorid}\qsource}%
-      }%
+      \qtext\IfValueT{\qsource}{\qsource}
+      \IfBooleanT{#1}{\AttributeQuote{\CorpusAuthorName*{\qauthorid}}}
     \end{tcolorbox}
   }
 }
