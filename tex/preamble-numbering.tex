@@ -12,3 +12,7 @@
 
 % \usepackage{chngcntr}
 \counterwithout{section}{chapter}
+
+\ProvideDocumentCommand{\RefChapter}{m}{chapitre~\ref{#1}}
+\ProvideDocumentCommand{\RefSection}{m}{section~\ref{#1}}
+\ProvideDocumentCommand{\RefPart}{m}{partie~\ref{#1}}
