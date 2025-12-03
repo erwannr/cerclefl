@@ -1,6 +1,6 @@
 % -----------------------------------------------------------------
-% Copyright (C) 2025 by Le cercle floridien (Erwann Rogard)
-% Source repository: https://github.com/erwannr/cerclefl
+% Copyright (C) 2025 by La bergerie floridienne (Erwann Rogard)
+% Source repository: https://github.com/erwannr/bergeriefl
 % 
 % LaTeX code:
 % Released under the LaTeX Project Public License v1.3c or later
@@ -40,7 +40,7 @@
     {%
       \begin{tcolorbox}[width=\marginparwidth, fontupper=\small]
         \IfPackageLoadedTF{fontawesome5}{\faChartBar{} }{}%
-        \begin{tabular}{ll}
+        \begin{tabular}{@{}l@{\hspace{1pt}}r}
           Publiées & \CounterUse{#1-safe}\\
           Total & \CounterUse{#1-unsafe}%
         \end{tabular}

@@ -1,6 +1,6 @@
 % -----------------------------------------------------------------
-% Copyright (C) 2025 by Le cercle floridien (Erwann Rogard)
-% Source repository: https://github.com/erwannr/cerclefl
+% Copyright (C) 2025 by La bergerie floridienne (Erwann Rogard)
+% Source repository: https://github.com/erwannr/bergeriefl
 % 
 % LaTeX code:
 % Released under the LaTeX Project Public License v1.3c or later
@@ -10,14 +10,14 @@
 % CC BY-NC-SA 4.0
 % -----------------------------------------------------------------
 
-%  \ProvideExpandableDocumentCommand{\CorpusPublicationName}{s m}{% Error!
+% \ProvideExpandableDocumentCommand{\CorpusPublicationName}{s m}{% Error!
 \ProvideDocumentCommand{\CorpusPublicationName}{s m}{%
-    \DTLforeach[\DTLiseq{\id}{#2}]{corpus-publication}{\id=id,\name=name}{%
-      \IfBooleanTF{#1}
-      {\name}%
-      {\hyperref[corpus-publ:\id]{\name}}%
-    }
+  \DTLforeach[\DTLiseq{\id}{#2}]{corpus-publication}{\id=id,\name=name}{%
+    \IfBooleanTF{#1}
+    {\name}%
+    {\hyperref[corpus-publ:\id]{\name}}%
   }
+}
 
 \ProvideDocumentCommand{\CorpusAuthorName}{s m}{%
   \DTLforeach[\DTLiseq{\id}{#2}]{corpus-author}{\id=id,\name=name}{%

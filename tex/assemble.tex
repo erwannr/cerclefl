@@ -1,6 +1,6 @@
 % -----------------------------------------------------------------
-% Copyright (C) 2025 by Le cercle floridien (Erwann Rogard)
-% Source repository: https://github.com/erwannr/cerclefl
+% Copyright (C) 2025 by La bergerie floridienne (Erwann Rogard)
+% Source repository: https://github.com/erwannr/bergeriefl
 % 
 % LaTeX code:
 % Released under the LaTeX Project Public License v1.3c or later
@@ -13,90 +13,13 @@
 % \documentclass[letterpaper]{report}
 \documentclass[letterpaper]{report}
 
-\usepackage[english,french]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[autostyle=true]{csquotes}
-\usepackage[bibencoding=auto, sorting=ynt, style=numeric]{biblatex}
-\usepackage[inline]{enumitem}
-\usepackage{anyfontsize}
-\usepackage{chngcntr}
-\usepackage{datatool}
-\usepackage{datetime2}
-\usepackage{enotez}
-\usepackage{fancyhdr} % headfoot
-\usepackage{fontawesome5}
-\usepackage[fontsize=12pt]{fontsize}
-\usepackage{geometry}
-\usepackage{graphicx}
-\usepackage{lastpage} % headfoot
-\usepackage{lettrine} %
-\usepackage{listings}
-\usepackage{pbsi}
-\usepackage{tcolorbox}
-\usepackage{titlesec} % \titleformat
-\usepackage{xcoffins} % cover
-\usepackage{xcolor}
-\usepackage{xsim}
-% I think the order matters for these two
-\usepackage{hyperref} % first
-\usepackage[french]{cleveref} % second
-
-\input{../tex/setup-rest.tex}
-\input{../tex/setup-listings.tex}
-\input{../tex/setup-title.tex}
-\input{../tex/setup-tcolorbox.tex}
-
-\input{../tex/setup-color.tex}
-
-\input{../tex/setup-geometry.tex}
-\savegeometry{default}
-
-\input{../tex/setup-hyperref.tex}
-
-\tcbuselibrary{most}
-
-% \geometry{showframe} % temporary
-\addbibresource{../bib/french.bib}
-\addbibresource{../bib/howtocite.bib}
-
-\input{../tex/shared-counter.tex} % local
-% \input{../tex/shared-enotez.tex} % local
-% \input{../tex/shared-french.tex} % local
-\input{../tex/shared-inlitemize.tex}
-\input{../tex/shared-provide.tex}
-\input{../tex/shared-quotestyle.tex}
-
-\input{../tex/preamble-french.tex}
-\input{../tex/preamble-abstract.tex}
-\input{../tex/preamble-back.tex}
-\input{../tex/preamble-club.tex}
-\input{../tex/preamble-corpus.tex}
-\input{../tex/preamble-marker.tex}
-\input{../tex/preamble-markers.tex}
-
-\input{../tex/preamble-info.tex}
-\input{../tex/preamble-latex3.tex}
-\input{../tex/preamble-crossref.tex}
-\input{../tex/preamble-studyaid.tex}
-\input{../tex/preamble-text.tex}
-\input{../tex/template-xsim.tex}
-
-\input{../tex/preamble-cover.tex}
-
-\input{../tex/template-enotez.tex}
-
-\input{../tex/corpus-author.tex}
-\input{../tex/corpus-keyword.tex}
-\input{../tex/corpus-publication.tex}
-\input{../tex/corpus-quote.tex}
-
-\input{../tex/club-member.tex}
-\input{../tex/club-read.tex}
-\input{../tex/club-journal.tex}
-\input{../tex/club-status.tex}
-
-\input{../tex/studyaid-lerouge.tex}
-\StudyAidNew{lerouge}
+\input{../tex/assemble-package.tex}
+\input{../tex/assemble-setup.tex}
+\input{../tex/assemble-addbib.tex}
+\input{../tex/assemble-shared.tex}
+\input{../tex/assemble-preamble.tex}
+\input{../tex/assemble-template.tex}
+\input{../tex/assemble-database.tex}
 
 \begin{document}
 

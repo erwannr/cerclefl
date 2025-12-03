@@ -1,0 +1,32 @@
+% -----------------------------------------------------------------
+% Copyright (C) 2025 by La bergerie floridienne (Erwann Rogard)
+% Source repository: https://github.com/erwannr/bergeriefl
+% 
+% LaTeX code:
+% Released under the LaTeX Project Public License v1.3c or later
+% See http://www.latex-project.org/lppl.txt
+% 
+% Written content (text):
+% CC BY-NC-SA 4.0
+% -----------------------------------------------------------------
+
+\ExplSyntaxOn
+
+\ProvideDocumentCommand{\CensoredElement}{}{%
+  \MarkerTypeset[colback=black!80, colframe=black, colupper=white]
+  {\faEyeSlash}{Élément~censuré}%
+}
+
+\ProvideDocumentCommand{\MissingQuote}{}{[Citation~manquante]}
+
+\ProvideDocumentCommand{\IntentionallyBlank}{}{%
+  \MarkerTypeset
+  {\faSquare[regular]}{Intentionnellement~vide}%
+}
+
+\ProvideDocumentCommand{\WorkInProgressFR}{}{%
+  \MarkerTypeset
+  {\faExclamationTriangle}{Travail~en~cours}%
+}
+
+\ExplSyntaxOff

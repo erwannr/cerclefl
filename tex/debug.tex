@@ -1,0 +1,16 @@
+% \documentclass[letterpaper]{report}
+\documentclass[letterpaper]{report}
+
+\input{../tex/assemble-package.tex}
+
+\input{../tex/setup-tcolorbox.tex}
+
+\input{../tex/preamble-marker.tex}
+
+\begin{document}
+
+foo~\tcbox[on line]{bar}~qux
+
+foo~\MarkerTypeset{bar}{qux}
+
+\end{document}
