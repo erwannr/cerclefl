@@ -2,10 +2,10 @@
 
 ## Purpose
 ### Français
-*La bergerie floridienne* est un groupe de lecture francophone de Floride fondé sur la philosophie des « bergers érudits », que « c'est l'assimilation qui compte ». Ce dépôt en constitue le registre avec pour produit final un [pdf](./pdf/assemble.pdf).
+*La bergerie de Floride* est un groupe de lecture francophone de Floride fondé sur la philosophie des « bergers érudits », que « c'est l'assimilation qui compte ». Ce dépôt en constitue le registre avec pour produit final un [pdf](./pdf/assemble.pdf).
 
 ### English
-*La bergerie floridienne* is a French-speaking reading group in Florida founded on the philosophy of the "scholarly shepherds", that "it's assimilation that counts". This [document](./pdf/assemble.pdf) serves as its record.
+*La bergerie de Floride* is a French-speaking reading group in Florida founded on the philosophy of the "scholarly shepherds", that "it's assimilation that counts". This [document](./pdf/assemble.pdf) serves as its record.
 
 ## Links
 [Support me](https://gofund.me/372439e61)
@@ -19,4 +19,4 @@ Sometimes [pdf don't render on github](https://github.com/orgs/community/discuss
 ![Front cover](./preview/assemble-0.png)
 ![TOC](./preview/assemble-2.png)
 ![TOC](./preview/assemble-3.png)
-![Back cover](./preview/assemble-26.png)
+![Back cover](./preview/assemble-22.png)
